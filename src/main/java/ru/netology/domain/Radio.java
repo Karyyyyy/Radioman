@@ -30,6 +30,7 @@ public class Radio {
             currentRadioStation = currentRadioStation - 1;
         }
     }
+
     public void customRadioStation() {
         int newCurrentRadioStation = getCurrentRadioStation();
         setCurrentRadioStation(newCurrentRadioStation);
@@ -40,7 +41,7 @@ public class Radio {
     }
 
     public void setSoundVolume(int currentSoundVolume) {
-        if (currentSoundVolume <0) {
+        if (currentSoundVolume < 0) {
             return;
         }
         if (currentSoundVolume > 10) {
@@ -52,18 +53,16 @@ public class Radio {
     public void increaseVolume() {
         if (currentSoundVolume >= 10) {
             currentSoundVolume = 10;
-        }
-        else {
-            currentSoundVolume = currentSoundVolume +1;
+        } else {
+            currentSoundVolume = currentSoundVolume + 1;
         }
     }
 
     public void decreaseVolume() {
-        if (currentSoundVolume <=0) {
+        if (currentSoundVolume <= 0) {
             currentSoundVolume = 0;
-        }
-        else {
-            currentSoundVolume = currentSoundVolume -1;
+        } else {
+            currentSoundVolume = currentSoundVolume - 1;
         }
     }
 
